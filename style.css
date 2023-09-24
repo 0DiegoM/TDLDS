@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(to right top, #668cff, #666eff, #7d66ff, #9c66ff, #ba66ff );
+}
+
+.emociones {
+    color: #f766ff;
+}
+
+#camera {
+    border: 2px dashed #66ffe0;
+    width: 350px;
+    height: 300px;
+    border-radius: 10%;
+    }
+    
+    #result_object_name {
+        color: #66ff91;
+    }
+    
+    #result_object_accuracy {
+        color: #66ffb8;
+    }
