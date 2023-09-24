@@ -6,17 +6,33 @@ body {
     color: #f766ff;
 }
 
-#camera {
-    border: 2px dashed #66ffe0;
-    width: 350px;
-    height: 300px;
-    border-radius: 10%;
-    }
-    
-    #result_object_name {
+
+#result_object_name {
         color: #66ff91;
-    }
+}
     
-    #result_object_accuracy {
+#result_object_accuracy {
         color: #66ffb8;
-    }
+}
+
+
+
+#camera {
+    border-radius:10%;
+    width: 400px;
+    height: 300px;
+    border: 2px dashed blue;
+    border-radius:10%;
+    radius: 10%;
+}
+
+
+
+
+#result {
+border: 2px dashed orange;
+width: 400px;
+height: 300px;
+border-radius: 10%;
+
+}

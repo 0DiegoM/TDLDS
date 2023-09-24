@@ -4,9 +4,19 @@ const camera = document.getElementById("camera");
 
 Webcam.attach("#camera");
 
-Webcam.on("save", function (data_uri) {
-    Pht = data_uri; 
+
+Webcam.set({
+    width: 400,
+    height: 300,
+    image_format: 'png',
+    png_quality: 90
 });
+
+function take_snapshot() {
+    Webcam.snap(function (data_uri) {
+        document.getElementById('result').innerHTML = '<img id="result" src="' + data_uri + '"/>';
+    });
+}
 
 const classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/7EeQs4qbb/model.json', modelLoaded);
 
@@ -15,13 +25,10 @@ function modelLoaded() {
 }
 
 function check() {
-    if (Pht) {
-        const img = new Image();
-        img.src = Pht;
-        classifier.classify(img, gotResult);
-    } else {
-        console.log("No image captured yet.");
-    }
+    img = document.getElementById('#result');
+    classifier.classify(img, gotResult);
+    
+    
 }
 
 function gotResult(error, results) {
