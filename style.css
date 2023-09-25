@@ -15,7 +15,9 @@ body {
         color: #66ffb8;
 }
 
-
+.T {
+font-family: helvetica, sans-serif;
+}
 
 #camera {
     border-radius:10%;
