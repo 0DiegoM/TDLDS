@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Test de translador de lenguaje de senas</title> 
+    <title>Test de translador de lenguaje de senas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,16 +18,16 @@
     <center>
         <h3>Reconezedor de abcedario en lenguaje de senas</h3>
         <br />
-        
 
-        
-        <label> Vista de camara </label>
+
+
+        <label style="margin-right:70%;" > Vista de camara </label>
+        <label style="margin-left: 70%;"> Vista de resultado </label>
         <br />
-        <div id="camera"></div>
-        <br />
-        <label> Vista de resultado </label>
-        <div id="result"></div>
-        <br /> <br>
+        <div id="camera" style="float: left;"></div> 
+        <div id="result" style="float: right; "></div>
+        <br/>
+
         <button onclick="take_snapshot();" class="btn btn-primary">
             Capturar Imagen
         </button>
