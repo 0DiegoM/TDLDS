@@ -1,9 +1,6 @@
-
-
 const camera = document.getElementById("camera");
 
 Webcam.attach("#camera");
-
 
 Webcam.set({
     width: 400,
@@ -14,7 +11,8 @@ Webcam.set({
 
 function take_snapshot() {
     Webcam.snap(function (data_uri) {
-        document.getElementById('result').innerHTML = '<img id="result" src="' + data_uri + '"/>';
+        
+        document.getElementById('result').innerHTML = '<img id="result_image" src="' + data_uri + '"/>';
     });
 }
 
@@ -25,20 +23,22 @@ function modelLoaded() {
 }
 
 function check() {
-    img = document.getElementById('result');
-    classifier.classify(img, gotResult);
-    
-    
+   
+    const imgElement = document.getElementById('result_image');
+
+    if (imgElement) {
+        classifier.classify(imgElement, gotResult);
+    } else {
+        console.error('No captured image found.');
+    }
 }
 
 function gotResult(error, results) {
     if (error) {
-        console.log(error);
+        console.error(error);
     } else {
         console.log(results);
         document.getElementById("result_object_name").textContent = results[0].label;
         document.getElementById("result_object_accuracy").textContent = results[0].confidence.toFixed(3);
     }
 }
-
-
