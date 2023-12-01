@@ -1,46 +1,46 @@
 body {
-    background: linear-gradient(to right top, #4A90E2, #5BAAF3, #6CB4FF, #7CC0FF, #8CD0FF);
-    font-family: 'Arial', sans-serif;
+	background: linear-gradient(to right top, #4a90e2, #5baaf3, #6cb4ff, #7cc0ff, #8cd0ff);
+	font-family: "Arial", sans-serif;
 }
 
 .emociones {
-    color: #FF6BCD;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
+	color: #ff6bcd;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 #result_object_name {
-    color: #5AFFA1;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+	color: #5affa1;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #result_object_accuracy {
-    color: #4FD8E4;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+	color: #4fd8e4;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .title {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 28px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 28px;
 }
 
 #camera {
-    width: 400px;
-    height: 300px;
-    border: 2px dashed blue;
-    margin-right: 20px;
+	width: 400px;
+	height: 300px;
+	border: 2px dashed blue;
+	margin-right: 20px;
 }
 
 #result {
-    border: 2px dashed orange;
-    width: 400px;
-    height: 300px;
-    margin-left: 20px;
+	border: 2px dashed orange;
+	width: 400px;
+	height: 300px;
+	margin-left: 20px;
 }
